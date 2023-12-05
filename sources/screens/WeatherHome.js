@@ -14,6 +14,7 @@ const WeatherHome = () => {
   }, [])
   const Pressed = ()=>{
   getDataFromApi()
+  getCurrentData()
  }
     const  Api_key = 'd1247f1c74f28e2c96aaa5b263742b13'
     // const  Api_key = 'd1247f1c74f28e2c96aaa5b263742b13'
@@ -55,7 +56,7 @@ const WeatherHome = () => {
       style={{borderRadius:3,borderWidth:1,margin:10}}
       />
       <View style={{alignItems:'center'}}>
-      <TouchableOpacity style={{backgroundColor:'rgba(0,0,255,0.9)',padding:10,width:'80%',borderBottomLeftRadius:30,borderTopRightRadius:30}} onPress={()=>Pressed()}>
+      <TouchableOpacity style={{backgroundColor:'rgba(0,0,210,0.3)',padding:10,width:'80%',borderBottomLeftRadius:30,borderTopRightRadius:30}} onPress={()=>Pressed()}>
         <Text style={{color:'white',textAlign:'center'}}>press for search</Text>
       </TouchableOpacity>
       </View>
